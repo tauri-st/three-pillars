@@ -23,3 +23,4 @@ The code of this exercise can be executed via Node.js or in the console tab of y
 6. Create an instance of `Bookshelf` class, and pass it as an argument to `loadBooks(..)`.
 
 	Hint: Class instantiation: `new Whatever()`.
+# three-pillars
