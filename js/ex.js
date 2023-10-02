@@ -3,21 +3,18 @@ class Bookshelf {
 	constructor() {
 		this.favoriteBooks = [];
 	}
-
 	// TODO: define methods `addFavoriteBook(..)`
 	// and `printFavoriteBooks()`
-}
-
-function addFavoriteBook(bookName) {
-	if (!bookName.includes("Great")) {
-		favoriteBooks.push(bookName);
+	addFavoriteBook(bookName) {
+		if (!bookName.includes("Great")) {
+			this.favoriteBooks.push(bookName);
+		}
 	}
-}
-
-function printFavoriteBooks() {
-	console.log(`Favorite Books: String(${favoriteBooks.length})`);
-	for (let bookName of favoriteBooks) {
-		console.log(bookName);
+	printFavoriteBooks() {
+		console.log(`Favorite Books: String(${this.favoriteBooks.length})`);
+		for (let bookName of favoriteBooks) {
+			console.log(bookName);
+		}
 	}
 }
 
