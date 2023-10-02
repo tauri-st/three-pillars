@@ -1,4 +1,3 @@
-console.log("it works");
 
 class Bookshelf {
 	constructor() {
@@ -16,7 +15,7 @@ function addFavoriteBook(bookName) {
 }
 
 function printFavoriteBooks() {
-	console.log(`Favorite Books: ${favoriteBooks.length}`);
+	console.log(`Favorite Books: String(${favoriteBooks.length})`);
 	for (let bookName of favoriteBooks) {
 		console.log(bookName);
 	}
