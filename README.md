@@ -10,6 +10,8 @@ The code of this exercise can be executed via Node.js or in the console tab of y
 
 	Hint: Use `String(..)` to coerce something to a string type.
 
+My Answer: In `Favorite Books: ${ favoriteBooks }`, `favoriteBooks` is implicity being converted from a string to a number, but making it explicit makes it that much more readable and clear what's happening there and unlikely to cause problems as the program becomes more complicated
+
 2. Move the `addFavoriteBook(..)` and `printFavoriteBooks()` functions into the `Bookshelf` class as methods. Modify them so they use the `this` keyword to access the `favoriteBooks` array.
 
 	Hint: `class` methods don't use the `function` keyword, just their name.
