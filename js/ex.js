@@ -18,7 +18,8 @@ class Bookshelf {
 	}
 }
 
-function loadBooks( /* .. */ ) {
+//receive an instance of the `Bookshelf` class that will be passed to it
+function loadBooks(theBookshelf) {
 	// TODO: call fakeAjax( .. );
 }
 
