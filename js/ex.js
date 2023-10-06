@@ -41,6 +41,11 @@ function loadBooks(theBookshelf) {
 
 var BOOK_API = "https://some.url/api";
 
+//Create an instance of `Bookshelf` class
+//pass it as an argument to `loadBooks(..)`.
+var myBooks = new Bookshelf();
+loadBooks(myBooks);
+
 
 // ***********************
 
