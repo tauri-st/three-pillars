@@ -20,7 +20,23 @@ class Bookshelf {
 
 //receive an instance of the `Bookshelf` class that will be passed to it
 function loadBooks(theBookshelf) {
-	// TODO: call fakeAjax( .. );
+	/*
+	call the provided `fakeAjax(..)`, using `BOOK_API` as the URL 
+	and an inline function expression as the callback.
+	*/
+	/*
+	The callback will be passed an array of book names (named as such). 
+	Loop through this array, passing each book name to the `addFavoriteBook(..)` method 
+	of the `Bookshelf` instance passed to `loadBooks(..)`. 
+	Then call the `printFavoriteBooks()` method.
+	*/
+	fakeAjax(BOOK_API,function onBooks (bookNames){
+		for (let bookName of bookNames) {
+			//implicit binding
+			theBookshelf.addFavoriteBook(bookName);
+		}
+		theBookshelf.printFavoriteBooks();
+	});
 }
 
 var BOOK_API = "https://some.url/api";
@@ -29,6 +45,7 @@ var BOOK_API = "https://some.url/api";
 // ***********************
 
 // NOTE: don't modify this function at all
+//cb stands for callback
 function fakeAjax(url,cb) {
 	setTimeout(function fakeLoadingDelay(){
 		cb([
